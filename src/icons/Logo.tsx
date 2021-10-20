@@ -2,17 +2,18 @@ import React from "react";
 
 export const Logo: React.FC = () => (
   <svg
+    version="1.0"
     xmlns="http://www.w3.org/2000/svg"
-    width="36"
-    height="33"
-    viewBox="0 0 36 33"
+    width="36.000000pt"
+    height="33.000000pt"
+    viewBox="0 0 36.000000 33.000000"
     preserveAspectRatio="xMidYMid meet"
   >
     <metadata>
       Created by potrace 1.16, written by Peter Selinger 2001-2019
     </metadata>
     <g
-      transform="translate(0.000000,542.000000) scale(0.100000,-0.100000)"
+      transform="translate(0.000000,33.000000) scale(0.006545,-0.006089)"
       fill="#000000"
       stroke="none"
     >
