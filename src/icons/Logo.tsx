@@ -3,9 +3,9 @@ import React from "react";
 export const Logo: React.FC = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="550.000000pt"
-    height="542.000000pt"
-    viewBox="0 0 550.000000 542.000000"
+    width="36"
+    height="33"
+    viewBox="0 0 36 33"
     preserveAspectRatio="xMidYMid meet"
   >
     <metadata>
