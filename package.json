@@ -59,7 +59,7 @@
     "singleQuote": false,
     "trailingComma": "es5"
   },
-  "name": "@saleor/macaw-ui",
+  "name": "@shopistry/macaw-ui",
   "description": "Saleor's UI component library",
   "author": "Saleor Commerce",
   "module": "dist/macaw-ui.esm.js",
