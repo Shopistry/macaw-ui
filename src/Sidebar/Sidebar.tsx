@@ -2,8 +2,9 @@ import clsx from "clsx";
 import React from "react";
 
 import { Logo } from "../icons/Logo";
+import { LogoLight } from "../icons/LogoLight";
 import { localStorageKeys } from "../localStorageKeys";
-import { makeStyles } from "../theme";
+import { makeStyles, useTheme } from "../theme";
 import useLocalStorage from "../tools/useLocalStorage";
 import { ExpandButton } from "./ExpandButton";
 import { MenuItem, menuWidth, shrunkMenuWidth } from "./MenuItem";
@@ -17,16 +18,20 @@ const useStyles = makeStyles(
     float: {
       height: "100vh",
       position: "fixed",
+      paddingRight: "2em",
+      overflowY: "auto",
     },
     logo: {
       margin: `36px 0 ${theme.spacing(3)} ${theme.spacing(3.5)}`,
     },
     root: {
       transition: "width 0.5s ease",
+      minWidth: menuWidth,
       width: menuWidth,
       zIndex: 100,
     },
     rootShrink: {
+      minWidth: shrunkMenuWidth,
       width: shrunkMenuWidth,
     },
     toolbarContainer: {
@@ -48,6 +53,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   toolbar,
   onMenuItemClick,
 }) => {
+  const theme = useTheme();
   const classes = useStyles({});
   const { value: isShrunkStr, setValue: setShrink } = useLocalStorage(
     localStorageKeys.menuShrink,
@@ -63,7 +69,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
     >
       <div className={classes.float}>
         <div className={classes.logo}>
-          <Logo />
+          {theme.themeType === "light" ? <Logo /> : <LogoLight />}
         </div>
         {menuItems.map((menuItem) => (
           <MenuItem
