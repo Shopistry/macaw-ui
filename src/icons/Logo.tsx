@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Logo: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+export const Logo: React.FC<React.SVGProps<SVGSVGElement>> = () => (
   <svg
     version="1.0"
     xmlns="http://www.w3.org/2000/svg"
