@@ -1,19 +1,18 @@
 import React from "react";
 
-export const Logo: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+export const ShopistryLogo: React.FC = () => (
   <svg
-    version="1.0"
     xmlns="http://www.w3.org/2000/svg"
-    width="36.000000pt"
-    height="33.000000pt"
-    viewBox="0 0 36.000000 33.000000"
+    width="550.000000pt"
+    height="542.000000pt"
+    viewBox="0 0 550.000000 542.000000"
     preserveAspectRatio="xMidYMid meet"
   >
     <metadata>
       Created by potrace 1.16, written by Peter Selinger 2001-2019
     </metadata>
     <g
-      transform="translate(0.000000,33.000000) scale(0.006545,-0.006089)"
+      transform="translate(0.000000,542.000000) scale(0.100000,-0.100000)"
       fill="#000000"
       stroke="none"
     >
@@ -33,4 +32,4 @@ c129 -39 206 -85 305 -185 139 -140 193 -260 202 -451 6 -132 -10 -220 -60
   </svg>
 );
 
-Logo.displayName = "Logo";
+ShopistryLogo.displayName = "ShopistryLogo";
